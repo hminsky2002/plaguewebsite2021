@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'LeagueSpartan';
+    src:
+        url('../webfonts/LeagueSpartan-Bold.woff');
+}
+
+body {
+    padding: 0; margin: 0
+}
+
+header,h1,p {
+    font-family: 'LeagueSpartan', Helvetica, arial, sans-serif;
+}
+
+
+.nav {
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.navlinks{
+    display:none;
+    visibility:hidden;
+
+}
+
+
+.title {
+  margin-top: 70px; /* Add a top margin to avoid content overlay */
+}
+
+.title > img{
+    width:100%;
+}
+.title > h1 {
+    margin: none;
+    text-align: center;
+}
+
+.logo{
+    width:100px;
+    height:auto;
+    margin:auto;
+    display:block;
+}
+
+]
+#caption1 {
+grid-area:c1;
+}
+#caption2 {
+grid-area:c2;
+}
+#caption3 {
+    grid-area:c3;
+}
+#image1{
+    grid-area:i1;
+}
+#image2{
+    grid-area:i2;
+}
+#image3{
+    grid-area:i3;
+}
+
+.wrapper > img{
+    width:80%;
+}
+.wrapper{
+    display:grid;
+    justify-content: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+        'i1 c1 '
+        'i2 c2'
+        'i3 c3';
+}
+.thingofthings{
+    width:80%;
+    margin: auto;
+    display: block;
+}
+.things{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap : 10px;
+    grid-auto-rows: minmax(50px, auto);
+
+
+}
+.thing1{
+    grid-column: 1;
+    grid-row:1
+}
+.thing2{
+    grid-column: 1;
+    grid-row:2
+
+}
+.thing3{
+    grid-column: 2;
+    grid-row:1
+}
+.thing4{
+    grid-column: 2;
+    grid-row:2
+}
+.things > button{
+    font-family: 'LeagueSpartan';
+    color:white;
+    background-color:black;
+    border-style: none;
+
+}
+.thingstodo{
+    margin: none;
+    text-align: center;
+}
+
+#caption4 {
+grid-area:c4;
+}
+#caption5 {
+grid-area:c5;
+}
+#caption6 {
+    grid-area:c6;
+}
+#image4{
+    grid-area:i4;
+}
+#image5{
+    grid-area:i5;
+}
+#image6{
+    grid-area:i6;
+}
+.wrapper2 > img {
+    width:80%;
+}
+.wrapper2{
+    display:grid;
+    justify-content: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+        'i4 c4 '
+        'i5 c5'
+        'i6 c6';
+}
+
+@media only screen and (min-width:50em){
+        main{
+            margin-top: 150px;
+        }
+        .navlinks {
+            display:block;
+            visibility: visible;
+        }
+        .nav ul {
+            flex-direction:row;
+            text-align: center;
+            display: block;
+            padding-bottom: 0px;
+
+        }
+        .nav li {
+            text-align: center;
+            display: inline-block;
+            padding: 14px 16px;
+            padding-bottom:none;
+
+
+        }
+        .nav a {
+            color:white;
+            font-family: Helvetica, arial, sans-serif;
+            text-decoration: none;
+        }
+        .nav a:hover{
+            font-weight: bold;
+            border-style:solid;
+            border-width: 0px 0px 2px 0px;
+            border-color: red;
+        }
+        .topnav a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        .title {
+          margin-top: 90px; /* Add a top margin to avoid content overlay */
+        }
+}
