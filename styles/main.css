@@ -11,7 +11,46 @@ body {
 header,h1,p {
     font-family: 'LeagueSpartan', Helvetica, arial, sans-serif;
 }
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  position: relative;
+}
 
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Helvetica, arial, sans-serif;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  color: gray;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #000000;
+  color: white;
+}
 
 .nav {
   overflow: hidden;
@@ -27,10 +66,17 @@ header,h1,p {
 }
 
 
-.title {
-  margin-top: 70px; /* Add a top margin to avoid content overlay */
-}
 
+.title {
+  margin-top: 100px; /* Add a top margin to avoid content overlay */
+}
+.title > p{
+    color: gray;
+    font-family: helvetica;
+    margin: none;
+    text-align: center;
+    visibility:hidden;
+}
 .title > img{
     width:100%;
 }
@@ -96,28 +142,16 @@ grid-area:c2;
 
 
 }
-.thing1{
-    grid-column: 1;
-    grid-row:1
-}
-.thing2{
-    grid-column: 1;
-    grid-row:2
-
-}
-.thing3{
-    grid-column: 2;
-    grid-row:1
-}
-.thing4{
-    grid-column: 2;
-    grid-row:2
+.thing:hover{
+    background-color:red;
 }
 .things > button{
     font-family: 'LeagueSpartan';
     color:white;
     background-color:black;
     border-style: none;
+    font-size: 1.3em;
+    text-align: center;
 
 }
 .thingstodo{
@@ -195,11 +229,37 @@ grid-area:c5;
             border-width: 0px 0px 2px 0px;
             border-color: red;
         }
-        .topnav a.active {
-          background-color: #4CAF50;
-          color: white;
-        }
+
         .title {
-          margin-top: 90px; /* Add a top margin to avoid content overlay */
+          margin-top: 60px; /* Add a top margin to avoid content overlay */
+          width:80%;
+          font-size:.8em;
         }
+
+        .title > p{
+            visibility: visible;
+        }
+        .wrapper{
+            margin-top:60px;
+            width:80%;
+            font-size:1.3em;
+        }
+        .toppage{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap : 0px;
+            grid-auto-rows: minmax(10px, auto);
+            margin-left:90px;
+
+
+        }
+        .topnav{
+            display:none;
+        }
+        .wrapper2{
+            width:40%;
+            margin:auto;
+
+        }
+
 }

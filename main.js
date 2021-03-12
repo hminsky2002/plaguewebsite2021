@@ -1,8 +1,8 @@
-function openSlideMenu(){
-    document.getElementById('hammy_menu').style.width = '250px';
-    document.getElementById('nav').style.marginLeft = '250px';
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
-function closeSlideMenu(){
-    document.getElementById('hammy_menu').style.width = '0';
-    document.getElementById('nav').style.marginLeft = '0';
-  }
+}
