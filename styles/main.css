@@ -5,11 +5,12 @@
 }
 
 body {
-    padding: 0; margin: 0
+    padding: 0; margin: 0;
+    background-color: #ECECEC;
 }
 
-header,h1,p {
-    font-family: 'LeagueSpartan', Helvetica, arial, sans-serif;
+header,h1,p,h2,h3,h4,h5,h6 {
+    font-family: franklin-gothic-atf, sans-serif;
 }
 .topnav {
   overflow: hidden;
@@ -68,7 +69,7 @@ header,h1,p {
 
 
 .title {
-  margin-top: 100px; /* Add a top margin to avoid content overlay */
+  margin-top:50px; /* Add a top margin to avoid content overlay */
 }
 .title > p{
     color: gray;
@@ -194,7 +195,61 @@ grid-area:c5;
         'i5 c5'
         'i6 c6';
 }
-
+.articlemain {
+    margin-top:60px;
+    width:80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    font-family: franklin-gothic-atf, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    word-spacing: 5px;
+}
+h5{
+ font-family: franklin-gothic-atf, sans-serif;
+ font-weight: 100;
+ font-style: normal;
+}
+.upper{
+    background-color:white;
+    width:95%;
+    display:block;
+    margin:auto;
+}
+.header{
+    border-left:0px;
+    border-right:0px;
+    border-top:0px;
+    border-bottom:3px;
+    border-style: solid;
+}
+.opener{
+    width:100%;
+    margin-top:30px;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+.opener p{
+    margin-left:50px;
+    padding-bottom: 30px;
+}
+.individual{
+    background-color:white;
+    width:95%;
+    display:block;
+    margin:auto;
+}
+.individual p{
+    margin-left:50px;
+    padding-bottom: 30px;
+}
 @media only screen and (min-width:50em){
         main{
             margin-top: 150px;
