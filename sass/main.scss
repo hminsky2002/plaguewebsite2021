@@ -8,9 +8,15 @@ $backgroundColor: white;
     margin:auto;
     justify-content: center;
 }
-@import 'fonts','topnav','section','article','piece';
+@import 'fonts','nav','section','article','piece','sidebar';
 body {
 	background: $backgroundColor;
 	margin: 0px;
 }
-@import 'desktoparticle';
+
+@import 'desktoparticle', 'piecedesktop', 'navdesktop';
+@media (min-width: 40em){
+	body{
+		margin-top: 100px;
+	}
+}
