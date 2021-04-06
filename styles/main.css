@@ -299,12 +299,6 @@ body {
   .pieceimage {
     display: none;
   }
-  .openbtn {
-    display: none;
-  }
-  .sidebar {
-    width: 0px;
-  }
 }
 
 @media (min-width: 40em) {
@@ -343,8 +337,8 @@ body {
     color: green;
     text-decoration: none;
   }
-  .icon {
-    visibility: hidden;
+  .nav {
+    padding-top: 15px;
   }
   .openbtn {
     display: none;
