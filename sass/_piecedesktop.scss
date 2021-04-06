@@ -1,0 +1,21 @@
+@media (min-width: 40em){
+	.piecemain{
+	@include centerContent(block)
+	margin-top: 60px;
+	max-width: 800px;
+
+	}
+	.piecebody{
+	background-image: url("../images/coneyisland.jpeg");
+	background-size: cover;
+	}
+	.pieceimage{
+		display:none;
+	}
+	.openbtn{
+		display:none;
+	}
+	.sidebar{
+		width:0px;
+	}
+}

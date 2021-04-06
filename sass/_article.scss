@@ -1,0 +1,74 @@
+@mixin outBtn(){
+	text-decoration: none;
+	white-space: nowrap;
+	font-size: 1rem;
+	padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: inline-block;
+    border: 1px solid #d8d8d8;
+    border-color: #000;
+    background-color: #fff;
+    border-width: 2px;
+    text-align: center;
+    line-height: 1;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+}
+
+
+
+
+.articlemain{
+	@include centerContent(flex)
+	flex-direction: column;
+	max-width:800px;
+}
+.articlehead{
+	
+	h1{
+		padding-left:10px;
+		font-size: 2rem;
+    	line-height: 4.2rem;
+		}
+	h4{
+		padding-left:10px;
+		font-weight: 400;
+	}
+	img{
+		width:100%;
+		height: auto;
+	}
+
+}
+
+.ad{
+	background-color: #ececec;
+	img{
+		@include centerContent(block)
+	}
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.article{
+	padding: 20px;
+	p{
+		line-height: 1.3rem;
+		font-size: .8rem;
+		color: #1a1a1a;
+	}
+	button{
+		@include outBtn()
+		&:hover{
+		border-color: green;
+		color: green;
+		a{
+			text-decoration: none;
+			color: green;
+		}
+	}
+	}
+	
+}

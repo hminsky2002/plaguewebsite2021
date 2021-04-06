@@ -1,0 +1,44 @@
+@media (min-width: 40em){
+	.linkwrapper{
+		@include centerContent(flex); 
+	}
+	.bottom-nav {
+	visibility: visible;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    width: 100%;
+    background-color:#1a1a1a;
+}
+	.desknavlink{
+		text-align: center;
+		position: relative;
+    	flex-shrink: 0;
+    	font-family: "Roboto",sans-serif;
+    	padding-top: 1rem;
+    	padding-bottom: 1rem;
+    	padding-left: 0.2rem;
+    	padding-right: 0.2rem;
+    	font-size: 1rem;
+    	margin-right: 1rem;
+    	margin-left: 1rem;
+    	display: block ;
+    	color: #fff;
+    	text-decoration: none;
+   	    background-color: transparent;
+   	    &:hover{
+   	    	transition: color 0.2s ease 0s;
+   	    	color: green;
+    		text-decoration: none;
+   	    }
+	}
+	.nav {
+		padding-top
+	}
+	.openbtn{
+		display:none;
+	}
+	.sidebar{
+		width:0px;
+	}
+}

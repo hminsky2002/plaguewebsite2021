@@ -1,0 +1,35 @@
+.bottom-nav{
+  visibility: hidden;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #1a1a1a;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #1a1a1a;
+  color: white;
+  img{
+    @include centerContent(block)
+  }
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #1a1a1a;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.navlinks{
+    display:none;
+    visibility:hidden;
+
+}
