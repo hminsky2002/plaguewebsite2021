@@ -1,5 +1,16 @@
-$backgroundColor: #D3D3D3;
-@import 'fonts','topnav','section';
+
+
+$backgroundColor: white;
+
+
+@mixin centerContent($display){
+    display: $display;
+    margin:auto;
+    justify-content: center;
+}
+@import 'fonts','topnav','section','article','piece';
 body {
 	background: $backgroundColor;
+	margin: 0px;
 }
+@import 'desktoparticle';

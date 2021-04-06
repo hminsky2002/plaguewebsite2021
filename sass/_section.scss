@@ -1,6 +1,10 @@
-.articlemain {
+
+
+
+.sectionmain {
     margin-top:60px;
     width:80%;
+    max-width: 600px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -39,9 +43,8 @@ h5{
     margin-right:auto;
     display: block;
 }
-.opener p{
-    margin-left:50px;
-    padding-bottom: 30px;
+.opener {
+   @include centerContent(block)
 }
 .individual{
     background-color:white;
@@ -49,7 +52,6 @@ h5{
     display:block;
     margin:auto;
 }
-.individual p{
-    margin-left:50px;
-    padding-bottom: 30px;
+.individual {
+    @include centerContent(block)
 }
