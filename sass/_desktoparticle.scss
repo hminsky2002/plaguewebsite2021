@@ -15,5 +15,26 @@
 	.ad{
 		height: 60%;
 	}
+	.zone{
+	 margin-top: 30px;
+	 margin-bottom: 30px;
+	 display: grid;
+   	 grid-template-columns: repeat(4,minmax(0,1fr));
+   	 column-gap: 5rem;
+   	 row-gap: 4rem;
+	}
+	.zoneitem{
+		img{
+		width: 70%;
+		}
+		flex-direction: column;
+    	border-bottom: 0;
+   	    margin: 0;
+   	    padding: 0;
+        align-items: flex-start;
 
+	}
+	.zonetitle{
+		@include centerContent(block)
+	}
 }

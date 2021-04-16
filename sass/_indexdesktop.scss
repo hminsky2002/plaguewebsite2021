@@ -1,0 +1,28 @@
+@media (min-width: 40em){
+
+	.upperindex{
+		@include centerContent(grid)
+  		grid-template-columns: repeat(1fr,3);
+  		column-gap: 20px;
+  		grid-template-rows: auto;
+  		grid-template-areas:
+  		'ih ih i1'
+  		'ih ih i2'
+  		'ih ih i3'
+  		;
+  		max-width: 1200px;
+
+	}
+	.indexhead{
+		grid-area: ih;
+	}
+	.item1{
+		grid-area: i1;
+	}
+	.item2{
+		grid-area: i2;
+	}
+	.item3{
+		grid-area: i3;
+	}
+}

@@ -50,6 +50,7 @@
 	}
 	padding-top: 20px;
 	padding-bottom: 20px;
+	overflow: visible;
 }
 
 .article{
@@ -71,4 +72,19 @@
 	}
 	}
 	
+}
+.pagebreak{
+	background-color: #ececec;
+	p{
+		text-align: center;
+	}
+	img{
+		height: 40%;
+		width: auto;
+		@include centerContent(block)
+	}
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: visible;
 }
