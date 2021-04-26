@@ -45,12 +45,14 @@
 
 .ad{
 	background-color: #ececec;
+	// need to center paragraph text//
 	img{
 		@include centerContent(block)
 	}
 	padding-top: 20px;
 	padding-bottom: 20px;
 	overflow: visible;
+
 }
 
 .article{

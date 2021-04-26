@@ -6,11 +6,13 @@
 
 	}
 	.piecebody{
-	background-image: url("../images/coneyisland.jpeg");
 	background-size: cover;
 	}
 	.pieceimage{
 		display:none;
+	}
+	#coney{
+		background-image: url("../images/coneyisland.jpeg");
 	}
 	
 }
