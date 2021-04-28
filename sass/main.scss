@@ -8,13 +8,13 @@ $backgroundColor: white;
     margin:auto;
     justify-content: center;
 }
-@import 'fonts','nav','section','article','piece','sidebar','index';
+@import 'fonts','nav','sections','piece','sidebar','index';
 body {
 	background: $backgroundColor;
 	margin: 0px;
 }
 
-@import 'desktoparticle', 'piecedesktop', 'navdesktop','indexdesktop';
+@import 'desktopsections', 'piecedesktop', 'navdesktop','indexdesktop';
 @media (min-width: 40em){
 	body{
 		margin-top: 100px;

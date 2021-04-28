@@ -14,14 +14,14 @@
   text-decoration: none;
   font-family: 'Roboto', helvetica, sans-serif;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
   transition: 0.3s;
-
-  }
   &:hover{
-    color: #f1f1f1;
+    color: green;
   }
+  }
+  
   .closebtn{
     position: absolute;
     top: 0;
