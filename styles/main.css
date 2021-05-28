@@ -59,15 +59,14 @@ p, li {
   max-width: 800px;
 }
 
-.sectionhead h1 {
-  padding-left: 10px;
-  font-size: 2rem;
-  line-height: 4.2rem;
+.sectionhead {
+  text-align: left;
+  border-bottom: 8px solid black;
 }
 
-.sectionhead h4 {
-  padding-left: 10px;
-  font-weight: 400;
+.sectionhead h1 {
+  font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .sectionhead img {
@@ -231,7 +230,6 @@ body {
     grid-auto-rows: minmax(100px, auto);
     column-gap: 3rem;
     row-gap: 4rem;
-    margin-right: 400px;
   }
   .sectionhead {
     grid-column: 1;
