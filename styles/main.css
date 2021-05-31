@@ -87,17 +87,17 @@ p, li {
   justify-content: center;
 }
 
-.article {
+.article, .list {
   padding: 20px;
 }
 
-.article p {
+.article p, .list p {
   line-height: 1.3rem;
   font-size: .8rem;
   color: #1a1a1a;
 }
 
-.article button {
+.article button, .list button {
   text-decoration: none;
   white-space: nowrap;
   font-size: 1rem;
@@ -116,12 +116,12 @@ p, li {
   font-weight: 700;
 }
 
-.article button:hover {
+.article button:hover, .list button:hover {
   border-color: green;
   color: green;
 }
 
-.article button:hover a {
+.article button:hover a, .list button:hover a {
   text-decoration: none;
   color: green;
 }

@@ -73,6 +73,9 @@
 	}
 	
 }
+.list{
+	@extend .article;
+}
 .pagebreak{
 	background-color: #ececec;
 	p{
