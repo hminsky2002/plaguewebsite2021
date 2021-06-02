@@ -8,16 +8,26 @@ $backgroundColor: white;
     margin:auto;
     justify-content: center;
 }
-@import 'fonts','nav','sections','piece','sidebar','index';
+@import 'fonts','nav','sections','piece','sidebar','index','about';
 body {
 	background: $backgroundColor;
-	margin: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 100px;
 }
 
-@import 'desktopsections', 'piecedesktop', 'navdesktop','indexdesktop';
+@import 'desktopsections', 'piecedesktop', 'navdesktop','indexdesktop','aboutdesktop';
 @media (min-width: 40em){
 	body{
 		margin-top: 100px;
 	}
 }
 
+.article{
+	img{
+		width: 300px;
+		height: 164.281px;
+		object-fit: cover;
+	}
+}

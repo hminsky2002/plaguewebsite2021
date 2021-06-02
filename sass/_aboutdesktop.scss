@@ -1,0 +1,16 @@
+.upperabout{
+    @extend .upperindex;
+		grid-template-areas:
+		'ab ct'
+		'ab ct'
+		'ab ct'
+		;
+		max-width: 1200px;
+
+	}
+.about{
+  grid-area: ab;
+}
+.contact{
+  grid-area: ct;
+}

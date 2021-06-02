@@ -2,27 +2,24 @@
 
 	.upperindex{
 		@include centerContent(grid)
-  		grid-template-columns: repeat(1fr,3);
+  		grid-template-columns: repeat(1fr,2);
   		column-gap: 20px;
   		grid-template-rows: auto;
   		grid-template-areas:
-  		'ih ih i1'
-  		'ih ih i2'
-  		'ih ih i3'
+  		'en sp'
+  		'en sp'
+  		'en sp'
   		;
-  		max-width: 1200px;
+  		max-width: 1400px;
 
 	}
-	.indexhead{
-		grid-area: ih;
+	.editorsnote{
+		grid-area: en;
+		img{
+			
+		}
 	}
-	.item1{
-		grid-area: i1;
-	}
-	.item2{
-		grid-area: i2;
-	}
-	.item3{
-		grid-area: i3;
+	.superlatives{
+		grid-area: sp;
 	}
 }

@@ -81,10 +81,17 @@ p, li {
   overflow: visible;
 }
 
+.ad p {
+  text-align: center;
+}
+
 .ad img {
   display: block;
   margin: auto;
   justify-content: center;
+  width: 300px;
+  height: 164.281px;
+  object-fit: cover;
 }
 
 .article, .list {
@@ -124,6 +131,12 @@ p, li {
 .article button:hover a, .list button:hover a {
   text-decoration: none;
   color: green;
+}
+
+.article img, .list img {
+  width: 300px;
+  height: 164.281px;
+  object-fit: cover;
 }
 
 .pagebreak {
@@ -218,9 +231,20 @@ p, li {
   }
 }
 
+.editornotesub {
+  font-size: .4rem;
+}
+
+u {
+  color: green;
+}
+
 body {
   background: white;
-  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 100px;
 }
 
 @media (min-width: 50em) {
@@ -307,32 +331,45 @@ body {
 }
 
 @media (min-width: 40em) {
-  .upperindex {
+  .upperindex, .upperabout {
     display: grid;
     margin: auto;
     justify-content: center;
-    grid-template-columns: repeat(1fr, 3);
+    grid-template-columns: repeat(1fr, 2);
     column-gap: 20px;
     grid-template-rows: auto;
-    grid-template-areas: 'ih ih i1' 'ih ih i2' 'ih ih i3';
-    max-width: 1200px;
+    grid-template-areas: 'en sp' 'en sp' 'en sp';
+    max-width: 1400px;
   }
-  .indexhead {
-    grid-area: ih;
+  .editorsnote {
+    grid-area: en;
   }
-  .item1 {
-    grid-area: i1;
+  .superlatives {
+    grid-area: sp;
   }
-  .item2 {
-    grid-area: i2;
-  }
-  .item3 {
-    grid-area: i3;
-  }
+}
+
+.upperabout {
+  grid-template-areas: 'ab ct' 'ab ct' 'ab ct';
+  max-width: 1200px;
+}
+
+.about {
+  grid-area: ab;
+}
+
+.contact {
+  grid-area: ct;
 }
 
 @media (min-width: 40em) {
   body {
     margin-top: 100px;
   }
+}
+
+.article img, .list img {
+  width: 300px;
+  height: 164.281px;
+  object-fit: cover;
 }

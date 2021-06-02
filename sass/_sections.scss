@@ -44,8 +44,15 @@
 .ad{
 	background-color: #ececec;
 	// need to center paragraph text//
+	p{
+		text-align: center;
+	}
 	img{
 		@include centerContent(block)
+		width: 300px;
+		height: 164.281px;
+		object-fit: cover;
+
 	}
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -69,9 +76,14 @@
 			text-decoration: none;
 			color: green;
 		}
+		}
 	}
+	img{
+	width: 300px;
+	height: 164.281px;
+	object-fit: cover;
+
 	}
-	
 }
 .list{
 	@extend .article;
