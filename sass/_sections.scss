@@ -49,13 +49,31 @@
 	}
 	img{
 		@include centerContent(block)
-		width: 240px;
+		width: 300px;
 		height: auto;
 	
 
 	}
 	padding-top: auto;
-	padding-bottom: auto;
+	padding-bottom: 10px;
+	overflow: visible;
+
+}
+.tallad{
+	background-color: #ececec;
+	// need to center paragraph text//
+	p{
+		text-align: center;
+	}
+	img{
+		@include centerContent(block);
+		width: 300px;
+		height: auto;
+	
+
+	}
+	padding-top: auto;
+	padding-bottom: 10px;
 	overflow: visible;
 
 }
@@ -89,23 +107,18 @@
 	@extend .article;
 }
 .pagebreak{
-	background-color: #ececec;
-	p{
+	@include centerContent(block)
+	p,h1{
 		text-align: center;
 	}
 	img{
-		height: 40%;
-		width: auto;
+		height: auto;
+		width: 100%;
+		max-width: 500px;
 		@include centerContent(block)
+		object-fit: fill;
 	}
 	
-	padding-top: 20px;
-	padding-bottom: 20px;
-	overflow: visible;
 }
-.gentleman{
-	img{
-		width: 240px;
-		height: auto;
-	}
-}
+
+

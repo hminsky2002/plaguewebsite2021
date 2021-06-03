@@ -3,10 +3,11 @@
 
 	.sectionmain {
 	display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
     column-gap: 3rem;
-    row-gap: 4rem;
+    grid-row-gap: 4rem;
+
 
 	}
 	.sectionhead{
@@ -17,5 +18,26 @@
 	.ad{
 		height: 60%;
 	}
+	.tallad{
+		grid-column: 3;
+		grid-column-end: span 1;
+	}
+	.pagebreak{
+	background-color: none;
+	@include centerContent(block)
+	p{
+		text-align: center;
+	}
+	img{
+		height: auto;
+		width: 90%;
+		max-width: 800px;
+		@include centerContent(block)
+		object-fit: fill;
+	}
+	
+	grid-column: 1;
+		grid-column-end: span 3;
+}
 }
 
