@@ -49,13 +49,13 @@
 	}
 	img{
 		@include centerContent(block)
-		width: 300px;
-		height: 164.281px;
-		object-fit: cover;
+		width: 240px;
+		height: auto;
+	
 
 	}
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: auto;
+	padding-bottom: auto;
 	overflow: visible;
 
 }
@@ -102,4 +102,10 @@
 	padding-top: 20px;
 	padding-bottom: 20px;
 	overflow: visible;
+}
+.gentleman{
+	img{
+		width: 240px;
+		height: auto;
+	}
 }
