@@ -28,16 +28,27 @@
 	p{
 		text-align: center;
 	}
+
 	img{
 		height: auto;
 		width: 90%;
-		max-width: 800px;
+		max-width: 1200px;
 		@include centerContent(block)
 		object-fit: fill;
 	}
 	
 	grid-column: 1;
 		grid-column-end: span 3;
+
+}
+.article{
+	&:hover{
+	background-color: #FBFBFB;
+	}
+}
+#amanda{
+	grid-column: 2;
+		grid-column-end: span 1;
 }
 }
 
