@@ -398,10 +398,13 @@ body {
   .superlatives {
     grid-area: sp;
   }
+  .indexmain {
+    margin: 100px;
+  }
 }
 
 .upperabout {
-  grid-template-areas: 'ab ct' 'ab ct' 'ab ct';
+  grid-template-areas: 'ab ct' 'ab ct' 'ab ct' 'mp mp';
   max-width: 1200px;
 }
 
@@ -411,6 +414,13 @@ body {
 
 .contact {
   grid-area: ct;
+}
+
+#nycmap {
+  grid-area: mp;
+  display: block;
+  margin: auto;
+  justify-content: center;
 }
 
 @media (min-width: 40em) {

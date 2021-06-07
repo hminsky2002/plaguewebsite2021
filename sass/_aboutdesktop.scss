@@ -4,6 +4,7 @@
 		'ab ct'
 		'ab ct'
 		'ab ct'
+    'mp mp'
 		;
 		max-width: 1200px;
 
@@ -13,4 +14,8 @@
 }
 .contact{
   grid-area: ct;
+}
+#nycmap{
+  grid-area: mp;
+  @include centerContent(block);
 }
