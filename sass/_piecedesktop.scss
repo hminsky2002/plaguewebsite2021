@@ -9,7 +9,9 @@
 	background-size: cover;
 	}
 	.pieceimage{
-		display:none;
+		width: 50%;
+		@include centerContent(block);
+		padding: 30px;
 	}
 	#coney{
 		background-image: url("../images/coneyisland.jpeg");

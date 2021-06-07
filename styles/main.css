@@ -323,7 +323,11 @@ body {
     background-size: cover;
   }
   .pieceimage {
-    display: none;
+    width: 50%;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    padding: 30px;
   }
   #coney {
     background-image: url("../images/coneyisland.jpeg");
